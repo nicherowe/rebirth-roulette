@@ -1,0 +1,1592 @@
+{
+ "IN": {
+  "rows": 29744,
+  "total_rows": 30088,
+  "kept_pop": 1312001301.7059999,
+  "source_pop": 1312002755.4089816,
+  "bytes": 470116,
+  "no_data": false
+ },
+ "CN": {
+  "rows": 40000,
+  "total_rows": 96678,
+  "kept_pop": 1346776471.7499783,
+  "source_pop": 1371057709.2309594,
+  "bytes": 665526,
+  "no_data": false
+ },
+ "US": {
+  "rows": 40000,
+  "total_rows": 114378,
+  "kept_pop": 320141483.4509973,
+  "source_pop": 321828097.2100015,
+  "bytes": 637930,
+  "no_data": false
+ },
+ "ID": {
+  "rows": 18322,
+  "total_rows": 19062,
+  "kept_pop": 256514412.98500076,
+  "source_pop": 256516950.17700115,
+  "bytes": 282261,
+  "no_data": false
+ },
+ "PK": {
+  "rows": 7741,
+  "total_rows": 7777,
+  "kept_pop": 184693851.2559987,
+  "source_pop": 184694073.24500006,
+  "bytes": 118031,
+  "no_data": false
+ },
+ "NG": {
+  "rows": 7697,
+  "total_rows": 7707,
+  "kept_pop": 181756299.88699877,
+  "source_pop": 181756315.4439995,
+  "bytes": 110334,
+  "no_data": false
+ },
+ "BR": {
+  "rows": 40000,
+  "total_rows": 72134,
+  "kept_pop": 206803137.4170015,
+  "source_pop": 207447372.0369997,
+  "bytes": 636445,
+  "no_data": false
+ },
+ "BD": {
+  "rows": 1448,
+  "total_rows": 1455,
+  "kept_pop": 157274612.0009994,
+  "source_pop": 157274632.2529996,
+  "bytes": 23679,
+  "no_data": false
+ },
+ "RU": {
+  "rows": 40000,
+  "total_rows": 296847,
+  "kept_pop": 131371177.74899945,
+  "source_pop": 142982869.38800797,
+  "bytes": 582761,
+  "no_data": false
+ },
+ "ET": {
+  "rows": 9500,
+  "total_rows": 9519,
+  "kept_pop": 99285631.15299982,
+  "source_pop": 99285847.57699984,
+  "bytes": 137762,
+  "no_data": false
+ },
+ "MX": {
+  "rows": 14417,
+  "total_rows": 18348,
+  "kept_pop": 126706500.38300057,
+  "source_pop": 126724857.48400038,
+  "bytes": 231431,
+  "no_data": false
+ },
+ "JP": {
+  "rows": 4757,
+  "total_rows": 4852,
+  "kept_pop": 126458078.75799963,
+  "source_pop": 126458690.67899993,
+  "bytes": 77407,
+  "no_data": false
+ },
+ "EG": {
+  "rows": 1044,
+  "total_rows": 9171,
+  "kept_pop": 91300546.536,
+  "source_pop": 91301299.83899994,
+  "bytes": 16121,
+  "no_data": false
+ },
+ "PH": {
+  "rows": 3608,
+  "total_rows": 3714,
+  "kept_pop": 99877187.42399961,
+  "source_pop": 99877671.49699974,
+  "bytes": 57786,
+  "no_data": false
+ },
+ "CD": {
+  "rows": 18562,
+  "total_rows": 19303,
+  "kept_pop": 77159234.46400172,
+  "source_pop": 77159695.14899999,
+  "bytes": 268271,
+  "no_data": false
+ },
+ "VN": {
+  "rows": 3181,
+  "total_rows": 3203,
+  "kept_pop": 93191661.59399946,
+  "source_pop": 93191808.57899967,
+  "bytes": 52535,
+  "no_data": false
+ },
+ "IR": {
+  "rows": 16026,
+  "total_rows": 16063,
+  "kept_pop": 79070208.76699954,
+  "source_pop": 79070402.39299905,
+  "bytes": 237376,
+  "no_data": false
+ },
+ "TR": {
+  "rows": 8552,
+  "total_rows": 8590,
+  "kept_pop": 78191332.00899991,
+  "source_pop": 78191608.78399967,
+  "bytes": 128575,
+  "no_data": false
+ },
+ "DE": {
+  "rows": 4908,
+  "total_rows": 4918,
+  "kept_pop": 80720373.65,
+  "source_pop": 80720452.48300011,
+  "bytes": 73367,
+  "no_data": false
+ },
+ "TH": {
+  "rows": 4777,
+  "total_rows": 4806,
+  "kept_pop": 67913743.61199987,
+  "source_pop": 67913921.36199997,
+  "bytes": 75747,
+  "no_data": false
+ },
+ "GB": {
+  "rows": 3854,
+  "total_rows": 4106,
+  "kept_pop": 64712208.92300013,
+  "source_pop": 64714107.88699997,
+  "bytes": 56295,
+  "no_data": false
+ },
+ "TZ": {
+  "rows": 7565,
+  "total_rows": 7675,
+  "kept_pop": 53018164.67699992,
+  "source_pop": 53019205.15499997,
+  "bytes": 113333,
+  "no_data": false
+ },
+ "FR": {
+  "rows": 6835,
+  "total_rows": 6866,
+  "kept_pop": 64378805.32499988,
+  "source_pop": 64379062.71399998,
+  "bytes": 96218,
+  "no_data": false
+ },
+ "ZA": {
+  "rows": 8713,
+  "total_rows": 11703,
+  "kept_pop": 54490511.00900014,
+  "source_pop": 54519944.42199982,
+  "bytes": 132149,
+  "no_data": false
+ },
+ "IT": {
+  "rows": 3791,
+  "total_rows": 3820,
+  "kept_pop": 59730623.45500014,
+  "source_pop": 59730875.70200012,
+  "bytes": 57091,
+  "no_data": false
+ },
+ "KE": {
+  "rows": 4817,
+  "total_rows": 4949,
+  "kept_pop": 45949602.584,
+  "source_pop": 45950203.44499985,
+  "bytes": 66921,
+  "no_data": false
+ },
+ "MM": {
+  "rows": 6400,
+  "total_rows": 6453,
+  "kept_pop": 53748703.74499982,
+  "source_pop": 53749039.74000017,
+  "bytes": 96459,
+  "no_data": false
+ },
+ "CO": {
+  "rows": 9314,
+  "total_rows": 9686,
+  "kept_pop": 48151775.841999926,
+  "source_pop": 48156824.547000006,
+  "bytes": 133823,
+  "no_data": false
+ },
+ "KR": {
+  "rows": 1267,
+  "total_rows": 1279,
+  "kept_pop": 49846454.89799998,
+  "source_pop": 49846500.61599997,
+  "bytes": 20733,
+  "no_data": false
+ },
+ "SD": {
+  "rows": 21078,
+  "total_rows": 21381,
+  "kept_pop": 52567897.03400066,
+  "source_pop": 52568556.76800058,
+  "bytes": 300640,
+  "no_data": false
+ },
+ "UG": {
+  "rows": 1885,
+  "total_rows": 1888,
+  "kept_pop": 39004013.14900022,
+  "source_pop": 39004013.149000034,
+  "bytes": 27078,
+  "no_data": false
+ },
+ "ES": {
+  "rows": 5755,
+  "total_rows": 5780,
+  "kept_pop": 46066027.95199992,
+  "source_pop": 46066214.48299992,
+  "bytes": 83755,
+  "no_data": false
+ },
+ "DZ": {
+  "rows": 14444,
+  "total_rows": 21766,
+  "kept_pop": 39577215.475999705,
+  "source_pop": 39655661.26799985,
+  "bytes": 186670,
+  "no_data": false
+ },
+ "IQ": {
+  "rows": 4267,
+  "total_rows": 4382,
+  "kept_pop": 36218579.68800004,
+  "source_pop": 36219207.1550001,
+  "bytes": 62225,
+  "no_data": false
+ },
+ "AR": {
+  "rows": 25744,
+  "total_rows": 28640,
+  "kept_pop": 43015894.4910006,
+  "source_pop": 43045273.8210001,
+  "bytes": 412299,
+  "no_data": false
+ },
+ "AF": {
+  "rows": 6498,
+  "total_rows": 6535,
+  "kept_pop": 32443951.789000154,
+  "source_pop": 32444312.674999956,
+  "bytes": 96279,
+  "no_data": false
+ },
+ "YE": {
+  "rows": 3351,
+  "total_rows": 3763,
+  "kept_pop": 26673178.49799993,
+  "source_pop": 26677377.774999898,
+  "bytes": 48606,
+  "no_data": false
+ },
+ "CA": {
+  "rows": 15870,
+  "total_rows": 178560,
+  "kept_pop": 35795507.67900056,
+  "source_pop": 35865709.24900026,
+  "bytes": 242720,
+  "no_data": false
+ },
+ "PL": {
+  "rows": 4292,
+  "total_rows": 4302,
+  "kept_pop": 38588989.15899991,
+  "source_pop": 38589058.853000015,
+  "bytes": 64994,
+  "no_data": false
+ },
+ "MA": {
+  "rows": 5691,
+  "total_rows": 6556,
+  "kept_pop": 34932084.77100002,
+  "source_pop": 34939980.54200008,
+  "bytes": 83139,
+  "no_data": false
+ },
+ "AO": {
+  "rows": 10648,
+  "total_rows": 10693,
+  "kept_pop": 25012848.649999965,
+  "source_pop": 25013270.988999892,
+  "bytes": 160549,
+  "no_data": false
+ },
+ "UA": {
+  "rows": 7765,
+  "total_rows": 7811,
+  "kept_pop": 44726164.80200003,
+  "source_pop": 44726405.92000002,
+  "bytes": 116412,
+  "no_data": false
+ },
+ "UZ": {
+  "rows": 4860,
+  "total_rows": 4885,
+  "kept_pop": 29666666.31199973,
+  "source_pop": 29666810.813000053,
+  "bytes": 72049,
+  "no_data": false
+ },
+ "MY": {
+  "rows": 3037,
+  "total_rows": 3139,
+  "kept_pop": 29884212.865000017,
+  "source_pop": 29884470.583000045,
+  "bytes": 44868,
+  "no_data": false
+ },
+ "MZ": {
+  "rows": 6961,
+  "total_rows": 7052,
+  "kept_pop": 27914394.79100017,
+  "source_pop": 27915531.97599996,
+  "bytes": 109172,
+  "no_data": false
+ },
+ "GH": {
+  "rows": 2077,
+  "total_rows": 2079,
+  "kept_pop": 27367040.82000003,
+  "source_pop": 27367040.820000034,
+  "bytes": 28889,
+  "no_data": false
+ },
+ "PE": {
+  "rows": 10741,
+  "total_rows": 11054,
+  "kept_pop": 30831067.931999754,
+  "source_pop": 30834004.958999746,
+  "bytes": 167808,
+  "no_data": false
+ },
+ "SA": {
+  "rows": 17637,
+  "total_rows": 17890,
+  "kept_pop": 31674411.44599953,
+  "source_pop": 31676210.51699969,
+  "bytes": 250691,
+  "no_data": false
+ },
+ "MG": {
+  "rows": 5350,
+  "total_rows": 5389,
+  "kept_pop": 24218495.92400005,
+  "source_pop": 24218758.250999983,
+  "bytes": 84965,
+  "no_data": false
+ },
+ "CI": {
+  "rows": 2747,
+  "total_rows": 2804,
+  "kept_pop": 22543067.952999942,
+  "source_pop": 22543131.941,
+  "bytes": 38945,
+  "no_data": false
+ },
+ "NP": {
+  "rows": 1451,
+  "total_rows": 1489,
+  "kept_pop": 28387388.90200001,
+  "source_pop": 28387663.465000037,
+  "bytes": 22089,
+  "no_data": false
+ },
+ "CM": {
+  "rows": 4037,
+  "total_rows": 4053,
+  "kept_pop": 23265190.70300002,
+  "source_pop": 23265362.69700003,
+  "bytes": 55946,
+  "no_data": false
+ },
+ "VE": {
+  "rows": 7317,
+  "total_rows": 7907,
+  "kept_pop": 31013599.78599999,
+  "source_pop": 31019094.795999926,
+  "bytes": 105228,
+  "no_data": false
+ },
+ "NE": {
+  "rows": 7860,
+  "total_rows": 10368,
+  "kept_pop": 19823881.366000038,
+  "source_pop": 19842864.045000445,
+  "bytes": 105120,
+  "no_data": false
+ },
+ "AU": {
+  "rows": 10463,
+  "total_rows": 71852,
+  "kept_pop": 23834625.23300015,
+  "source_pop": 23955175.571000095,
+  "bytes": 163143,
+  "no_data": false
+ },
+ "KP": {
+  "rows": 1487,
+  "total_rows": 1496,
+  "kept_pop": 25046070.008,
+  "source_pop": 25046094.21800001,
+  "bytes": 24400,
+  "no_data": false
+ },
+ "SY": {
+  "rows": 1853,
+  "total_rows": 1972,
+  "kept_pop": 18454583.560999896,
+  "source_pop": 18455023.918000013,
+  "bytes": 27665,
+  "no_data": false
+ },
+ "ML": {
+  "rows": 7170,
+  "total_rows": 10984,
+  "kept_pop": 17511337.743000045,
+  "source_pop": 17565254.12600014,
+  "bytes": 100110,
+  "no_data": false
+ },
+ "BF": {
+  "rows": 2442,
+  "total_rows": 2444,
+  "kept_pop": 18106178.864999995,
+  "source_pop": 18106206.10100003,
+  "bytes": 35550,
+  "no_data": false
+ },
+ "TW": {
+  "rows": 392,
+  "total_rows": 398,
+  "kept_pop": 23222835.65400002,
+  "source_pop": 23222845.301999997,
+  "bytes": 6401,
+  "no_data": false
+ },
+ "LK": {
+  "rows": 623,
+  "total_rows": 636,
+  "kept_pop": 20679018.063000023,
+  "source_pop": 20679048.00300001,
+  "bytes": 9058,
+  "no_data": false
+ },
+ "MW": {
+  "rows": 922,
+  "total_rows": 969,
+  "kept_pop": 17199186.949999966,
+  "source_pop": 17199541.025999956,
+  "bytes": 15123,
+  "no_data": false
+ },
+ "ZM": {
+  "rows": 6473,
+  "total_rows": 6499,
+  "kept_pop": 16187097.111999951,
+  "source_pop": 16187297.993999949,
+  "bytes": 99898,
+  "no_data": false
+ },
+ "KZ": {
+  "rows": 32890,
+  "total_rows": 33346,
+  "kept_pop": 17510439.94400032,
+  "source_pop": 17514083.59199985,
+  "bytes": 453359,
+  "no_data": false
+ },
+ "TD": {
+  "rows": 9665,
+  "total_rows": 10982,
+  "kept_pop": 13917290.996000076,
+  "source_pop": 13941441.643000081,
+  "bytes": 134995,
+  "no_data": false
+ },
+ "CL": {
+  "rows": 7117,
+  "total_rows": 9479,
+  "kept_pop": 17889861.341999967,
+  "source_pop": 17906351.00900011,
+  "bytes": 113627,
+  "no_data": false
+ },
+ "RO": {
+  "rows": 2909,
+  "total_rows": 2920,
+  "kept_pop": 19485071.092999943,
+  "source_pop": 19485137.369999968,
+  "bytes": 43656,
+  "no_data": false
+ },
+ "SO": {
+  "rows": 5443,
+  "total_rows": 5495,
+  "kept_pop": 10793982.57599999,
+  "source_pop": 10794240.31499999,
+  "bytes": 74617,
+  "no_data": false
+ },
+ "SN": {
+  "rows": 1799,
+  "total_rows": 1805,
+  "kept_pop": 15075195.802000027,
+  "source_pop": 15075228.459000006,
+  "bytes": 28775,
+  "no_data": false
+ },
+ "GT": {
+  "rows": 1013,
+  "total_rows": 1014,
+  "kept_pop": 16328630.860999983,
+  "source_pop": 16328630.860999992,
+  "bytes": 16538,
+  "no_data": false
+ },
+ "NL": {
+  "rows": 595,
+  "total_rows": 599,
+  "kept_pop": 16858571.37299999,
+  "source_pop": 16858601.271999996,
+  "bytes": 8689,
+  "no_data": false
+ },
+ "EC": {
+  "rows": 2105,
+  "total_rows": 2316,
+  "kept_pop": 16012930.686000008,
+  "source_pop": 16014567.816000002,
+  "bytes": 31738,
+  "no_data": false
+ },
+ "KH": {
+  "rows": 1640,
+  "total_rows": 1645,
+  "kept_pop": 15593082.233999934,
+  "source_pop": 15593146.602999978,
+  "bytes": 26191,
+  "no_data": false
+ },
+ "ZW": {
+  "rows": 3471,
+  "total_rows": 3486,
+  "kept_pop": 15594236.677999943,
+  "source_pop": 15594397.965000013,
+  "bytes": 55131,
+  "no_data": false
+ },
+ "GN": {
+  "rows": 2207,
+  "total_rows": 2213,
+  "kept_pop": 12601513.627999991,
+  "source_pop": 12601601.783999976,
+  "bytes": 33618,
+  "no_data": false
+ },
+ "BJ": {
+  "rows": 1049,
+  "total_rows": 1050,
+  "kept_pop": 10828596.607999997,
+  "source_pop": 10828596.608000007,
+  "bytes": 14252,
+  "no_data": false
+ },
+ "RW": {
+  "rows": 242,
+  "total_rows": 248,
+  "kept_pop": 11600288.84300001,
+  "source_pop": 11600300.979000004,
+  "bytes": 3816,
+  "no_data": false
+ },
+ "BI": {
+  "rows": 251,
+  "total_rows": 251,
+  "kept_pop": 11135289.635999987,
+  "source_pop": 11135289.635999994,
+  "bytes": 3990,
+  "no_data": false
+ },
+ "BO": {
+  "rows": 9236,
+  "total_rows": 9487,
+  "kept_pop": 10723828.1690003,
+  "source_pop": 10725326.41900032,
+  "bytes": 146331,
+  "no_data": false
+ },
+ "TN": {
+  "rows": 1636,
+  "total_rows": 1676,
+  "kept_pop": 11232558.116999963,
+  "source_pop": 11232847.809000019,
+  "bytes": 22863,
+  "no_data": false
+ },
+ "SS": {
+  "rows": 0,
+  "kept_pop": 0,
+  "source_pop": 0,
+  "no_data": true
+ },
+ "HT": {
+  "rows": 313,
+  "total_rows": 321,
+  "kept_pop": 10576618.064000007,
+  "source_pop": 10576642.034999998,
+  "bytes": 5240,
+  "no_data": false
+ },
+ "BE": {
+  "rows": 457,
+  "total_rows": 457,
+  "kept_pop": 11293243.08,
+  "source_pop": 11293243.07999999,
+  "bytes": 6667,
+  "no_data": false
+ },
+ "JO": {
+  "rows": 912,
+  "total_rows": 942,
+  "kept_pop": 7593919.809999994,
+  "source_pop": 7594212.695999995,
+  "bytes": 12682,
+  "no_data": false
+ },
+ "DO": {
+  "rows": 491,
+  "total_rows": 494,
+  "kept_pop": 10524130.899000011,
+  "source_pop": 10524153.231000008,
+  "bytes": 8022,
+  "no_data": false
+ },
+ "AE": {
+  "rows": 837,
+  "total_rows": 855,
+  "kept_pop": 9049501.771999983,
+  "source_pop": 9049559.601000004,
+  "bytes": 12582,
+  "no_data": false
+ },
+ "CU": {
+  "rows": 1308,
+  "total_rows": 1346,
+  "kept_pop": 11356061.527999988,
+  "source_pop": 11356280.329999994,
+  "bytes": 20890,
+  "no_data": false
+ },
+ "CZ": {
+  "rows": 1095,
+  "total_rows": 1098,
+  "kept_pop": 10562225.838000022,
+  "source_pop": 10562256.371000005,
+  "bytes": 16581,
+  "no_data": false
+ },
+ "HN": {
+  "rows": 1070,
+  "total_rows": 1079,
+  "kept_pop": 8081027.113999996,
+  "source_pop": 8081101.744999995,
+  "bytes": 16939,
+  "no_data": false
+ },
+ "PG": {
+  "rows": 4434,
+  "total_rows": 4596,
+  "kept_pop": 7611535.15599998,
+  "source_pop": 7612713.759000004,
+  "bytes": 68500,
+  "no_data": false
+ },
+ "TJ": {
+  "rows": 1568,
+  "total_rows": 1657,
+  "kept_pop": 8426151.711999988,
+  "source_pop": 8427066.68999999,
+  "bytes": 22593,
+  "no_data": false
+ },
+ "SE": {
+  "rows": 6935,
+  "total_rows": 8452,
+  "kept_pop": 9638874.828000031,
+  "source_pop": 9656164.039999941,
+  "bytes": 96184,
+  "no_data": false
+ },
+ "PT": {
+  "rows": 1082,
+  "total_rows": 1143,
+  "kept_pop": 10341374.246999979,
+  "source_pop": 10341656.214999981,
+  "bytes": 16111,
+  "no_data": false
+ },
+ "AZ": {
+  "rows": 1063,
+  "total_rows": 1070,
+  "kept_pop": 9722892.165000014,
+  "source_pop": 9722953.306999993,
+  "bytes": 16038,
+  "no_data": false
+ },
+ "GR": {
+  "rows": 1979,
+  "total_rows": 2120,
+  "kept_pop": 10946498.641999977,
+  "source_pop": 10947381.839000018,
+  "bytes": 28908,
+  "no_data": false
+ },
+ "HU": {
+  "rows": 1213,
+  "total_rows": 1213,
+  "kept_pop": 9852415.020999974,
+  "source_pop": 9852415.021000018,
+  "bytes": 18298,
+  "no_data": false
+ },
+ "TG": {
+  "rows": 547,
+  "total_rows": 548,
+  "kept_pop": 7286101.708999996,
+  "source_pop": 7286101.708999996,
+  "bytes": 7115,
+  "no_data": false
+ },
+ "IL": {
+  "rows": 266,
+  "total_rows": 280,
+  "kept_pop": 8050639.069000001,
+  "source_pop": 8050762.149,
+  "bytes": 4054,
+  "no_data": false
+ },
+ "AT": {
+  "rows": 1126,
+  "total_rows": 1131,
+  "kept_pop": 8552397.030999994,
+  "source_pop": 8552435.121000003,
+  "bytes": 16834,
+  "no_data": false
+ },
+ "BY": {
+  "rows": 2989,
+  "total_rows": 3005,
+  "kept_pop": 9529378.053000007,
+  "source_pop": 9529537.816999994,
+  "bytes": 43866,
+  "no_data": false
+ },
+ "CH": {
+  "rows": 561,
+  "total_rows": 567,
+  "kept_pop": 8245640.059000006,
+  "source_pop": 8245686.085000002,
+  "bytes": 7965,
+  "no_data": false
+ },
+ "SL": {
+  "rows": 665,
+  "total_rows": 667,
+  "kept_pop": 6424600.241000007,
+  "source_pop": 6424628.304000011,
+  "bytes": 10094,
+  "no_data": false
+ },
+ "LA": {
+  "rows": 2182,
+  "total_rows": 2191,
+  "kept_pop": 6825352.621999997,
+  "source_pop": 6825457.048000002,
+  "bytes": 34577,
+  "no_data": false
+ },
+ "TM": {
+  "rows": 5141,
+  "total_rows": 5360,
+  "kept_pop": 5380947.164000066,
+  "source_pop": 5381338.602999991,
+  "bytes": 74418,
+  "no_data": false
+ },
+ "HK": {
+  "rows": 27,
+  "total_rows": 27,
+  "kept_pop": 7192600.194999999,
+  "source_pop": 7192600.195,
+  "bytes": 457,
+  "no_data": false
+ },
+ "LY": {
+  "rows": 11145,
+  "total_rows": 15013,
+  "kept_pop": 6222286.810999876,
+  "source_pop": 6276569.998999876,
+  "bytes": 151767,
+  "no_data": false
+ },
+ "KG": {
+  "rows": 2301,
+  "total_rows": 2324,
+  "kept_pop": 5996997.291000009,
+  "source_pop": 5997171.385000009,
+  "bytes": 33271,
+  "no_data": false
+ },
+ "NI": {
+  "rows": 1135,
+  "total_rows": 1167,
+  "kept_pop": 6067534.454999995,
+  "source_pop": 6067657.674999998,
+  "bytes": 18019,
+  "no_data": false
+ },
+ "PY": {
+  "rows": 3155,
+  "total_rows": 3689,
+  "kept_pop": 6596586.259999973,
+  "source_pop": 6601265.316000012,
+  "bytes": 50449,
+  "no_data": false
+ },
+ "RS": {
+  "rows": 0,
+  "kept_pop": 0,
+  "source_pop": 0,
+  "no_data": true
+ },
+ "BG": {
+  "rows": 1336,
+  "total_rows": 1346,
+  "kept_pop": 7100634.870000002,
+  "source_pop": 7100687.459000004,
+  "bytes": 19979,
+  "no_data": false
+ },
+ "SV": {
+  "rows": 212,
+  "total_rows": 214,
+  "kept_pop": 6109782.385000008,
+  "source_pop": 6109790.986000007,
+  "bytes": 3540,
+  "no_data": false
+ },
+ "CG": {
+  "rows": 2955,
+  "total_rows": 2998,
+  "kept_pop": 4548733.502999971,
+  "source_pop": 4549003.313000011,
+  "bytes": 40337,
+  "no_data": false
+ },
+ "DK": {
+  "rows": 869,
+  "total_rows": 891,
+  "kept_pop": 5662668.065999995,
+  "source_pop": 5662818.869999996,
+  "bytes": 12492,
+  "no_data": false
+ },
+ "LB": {
+  "rows": 136,
+  "total_rows": 137,
+  "kept_pop": 5661076.279999999,
+  "source_pop": 5661077.745999998,
+  "bytes": 2107,
+  "no_data": false
+ },
+ "SG": {
+  "rows": 11,
+  "total_rows": 15,
+  "kept_pop": 5544639.684000001,
+  "source_pop": 5544639.684,
+  "bytes": 184,
+  "no_data": false
+ },
+ "FI": {
+  "rows": 5770,
+  "total_rows": 6835,
+  "kept_pop": 5484032.4909999585,
+  "source_pop": 5495946.294999953,
+  "bytes": 80247,
+  "no_data": false
+ },
+ "LR": {
+  "rows": 876,
+  "total_rows": 878,
+  "kept_pop": 4509130.605000003,
+  "source_pop": 4509151.105000006,
+  "bytes": 12425,
+  "no_data": false
+ },
+ "NO": {
+  "rows": 6557,
+  "total_rows": 7416,
+  "kept_pop": 5152683.483000048,
+  "source_pop": 5161152.672000056,
+  "bytes": 87947,
+  "no_data": false
+ },
+ "PS": {
+  "rows": 87,
+  "total_rows": 87,
+  "kept_pop": 4652170.274999998,
+  "source_pop": 4652170.275000001,
+  "bytes": 1383,
+  "no_data": false
+ },
+ "SK": {
+  "rows": 686,
+  "total_rows": 690,
+  "kept_pop": 5420386.437,
+  "source_pop": 5420409.7990000015,
+  "bytes": 10368,
+  "no_data": false
+ },
+ "CF": {
+  "rows": 4666,
+  "total_rows": 5323,
+  "kept_pop": 4889737.625999979,
+  "source_pop": 4898107.143999981,
+  "bytes": 61239,
+  "no_data": false
+ },
+ "OM": {
+  "rows": 2626,
+  "total_rows": 2935,
+  "kept_pop": 4565556.779999952,
+  "source_pop": 4568357.604000005,
+  "bytes": 36750,
+  "no_data": false
+ },
+ "IE": {
+  "rows": 1120,
+  "total_rows": 1154,
+  "kept_pop": 4687976.310000003,
+  "source_pop": 4688226.160999996,
+  "bytes": 16568,
+  "no_data": false
+ },
+ "NZ": {
+  "rows": 2063,
+  "total_rows": 3377,
+  "kept_pop": 4514654.849999995,
+  "source_pop": 4521298.669999997,
+  "bytes": 32606,
+  "no_data": false
+ },
+ "MR": {
+  "rows": 3650,
+  "total_rows": 9260,
+  "kept_pop": 4026465.1710000103,
+  "source_pop": 4065426.3390001124,
+  "bytes": 53557,
+  "no_data": false
+ },
+ "CR": {
+  "rows": 510,
+  "total_rows": 524,
+  "kept_pop": 4799134.508000005,
+  "source_pop": 4799229.499000002,
+  "bytes": 7862,
+  "no_data": false
+ },
+ "KW": {
+  "rows": 201,
+  "total_rows": 203,
+  "kept_pop": 3876580.6739999996,
+  "source_pop": 3876602.614999999,
+  "bytes": 3047,
+  "no_data": false
+ },
+ "PA": {
+  "rows": 763,
+  "total_rows": 820,
+  "kept_pop": 3909338.7359999986,
+  "source_pop": 3909650.5159999975,
+  "bytes": 11117,
+  "no_data": false
+ },
+ "HR": {
+  "rows": 870,
+  "total_rows": 898,
+  "kept_pop": 4221042.313999995,
+  "source_pop": 4221324.082999997,
+  "bytes": 12841,
+  "no_data": false
+ },
+ "GE": {
+  "rows": 854,
+  "total_rows": 870,
+  "kept_pop": 4001844.029000001,
+  "source_pop": 4001962.921000002,
+  "bytes": 12569,
+  "no_data": false
+ },
+ "ER": {
+  "rows": 1187,
+  "total_rows": 1210,
+  "kept_pop": 5278916.706000011,
+  "source_pop": 5279135.331000008,
+  "bytes": 17548,
+  "no_data": false
+ },
+ "MN": {
+  "rows": 13489,
+  "total_rows": 18915,
+  "kept_pop": 2888174.1869999785,
+  "source_pop": 2959867.485999931,
+  "bytes": 186135,
+  "no_data": false
+ },
+ "UY": {
+  "rows": 1357,
+  "total_rows": 1822,
+  "kept_pop": 3404298.0599999996,
+  "source_pop": 3409312.2340000025,
+  "bytes": 21134,
+  "no_data": false
+ },
+ "PR": {
+  "rows": 105,
+  "total_rows": 117,
+  "kept_pop": 3682483.8449999993,
+  "source_pop": 3682516.206,
+  "bytes": 1748,
+  "no_data": false
+ },
+ "BA": {
+  "rows": 658,
+  "total_rows": 662,
+  "kept_pop": 3829474.7100000023,
+  "source_pop": 3829527.5410000053,
+  "bytes": 9870,
+  "no_data": false
+ },
+ "QA": {
+  "rows": 119,
+  "total_rows": 138,
+  "kept_pop": 2234367.0800000024,
+  "source_pop": 2234449.267,
+  "bytes": 1750,
+  "no_data": false
+ },
+ "MD": {
+  "rows": 482,
+  "total_rows": 483,
+  "kept_pop": 4071648.591000002,
+  "source_pop": 4071651.519000002,
+  "bytes": 7249,
+  "no_data": false
+ },
+ "NA": {
+  "rows": 4173,
+  "total_rows": 7464,
+  "kept_pop": 2423470.132999993,
+  "source_pop": 2449623.2609999822,
+  "bytes": 60152,
+  "no_data": false
+ },
+ "AM": {
+  "rows": 379,
+  "total_rows": 381,
+  "kept_pop": 3012907.083000005,
+  "source_pop": 3012937.5460000047,
+  "bytes": 5693,
+  "no_data": false
+ },
+ "LT": {
+  "rows": 1011,
+  "total_rows": 1019,
+  "kept_pop": 2874877.065999999,
+  "source_pop": 2874924.336999996,
+  "bytes": 14991,
+  "no_data": false
+ },
+ "JM": {
+  "rows": 128,
+  "total_rows": 129,
+  "kept_pop": 2789492.025000001,
+  "source_pop": 2789492.445999999,
+  "bytes": 2135,
+  "no_data": false
+ },
+ "AL": {
+  "rows": 364,
+  "total_rows": 370,
+  "kept_pop": 2876057.7639999976,
+  "source_pop": 2876114.6379999984,
+  "bytes": 5421,
+  "no_data": false
+ },
+ "GM": {
+  "rows": 131,
+  "total_rows": 131,
+  "kept_pop": 1973172.1579999991,
+  "source_pop": 1973172.1579999987,
+  "bytes": 2130,
+  "no_data": false
+ },
+ "GA": {
+  "rows": 2262,
+  "total_rows": 2305,
+  "kept_pop": 1722158.039999998,
+  "source_pop": 1722507.706999999,
+  "bytes": 29791,
+  "no_data": false
+ },
+ "BW": {
+  "rows": 4436,
+  "total_rows": 5219,
+  "kept_pop": 2251866.0629999833,
+  "source_pop": 2252990.431999998,
+  "bytes": 65814,
+  "no_data": false
+ },
+ "LS": {
+  "rows": 329,
+  "total_rows": 330,
+  "kept_pop": 2112965.607,
+  "source_pop": 2112965.821,
+  "bytes": 5290,
+  "no_data": false
+ },
+ "GW": {
+  "rows": 370,
+  "total_rows": 385,
+  "kept_pop": 1837703.758000001,
+  "source_pop": 1837774.862000001,
+  "bytes": 5840,
+  "no_data": false
+ },
+ "SI": {
+  "rows": 296,
+  "total_rows": 299,
+  "kept_pop": 2123138.188999997,
+  "source_pop": 2123178.0940000005,
+  "bytes": 4416,
+  "no_data": false
+ },
+ "GQ": {
+  "rows": 259,
+  "total_rows": 262,
+  "kept_pop": 842562.244,
+  "source_pop": 842562.4519999997,
+  "bytes": 3474,
+  "no_data": false
+ },
+ "LV": {
+  "rows": 1052,
+  "total_rows": 1069,
+  "kept_pop": 1963953.6339999961,
+  "source_pop": 1964130.7309999983,
+  "bytes": 15010,
+  "no_data": false
+ },
+ "MK": {
+  "rows": 308,
+  "total_rows": 309,
+  "kept_pop": 2090916.7110000001,
+  "source_pop": 2090936.2390000008,
+  "bytes": 4628,
+  "no_data": false
+ },
+ "BH": {
+  "rows": 15,
+  "total_rows": 16,
+  "kept_pop": 1260590.542,
+  "source_pop": 1260593.6300000001,
+  "bytes": 243,
+  "no_data": false
+ },
+ "XK": {
+  "rows": 0,
+  "kept_pop": 0,
+  "source_pop": 0,
+  "no_data": true
+ },
+ "TT": {
+  "rows": 71,
+  "total_rows": 74,
+  "kept_pop": 1347419.221,
+  "source_pop": 1347443.9490000003,
+  "bytes": 1166,
+  "no_data": false
+ },
+ "TL": {
+  "rows": 172,
+  "total_rows": 180,
+  "kept_pop": 1159568.872999998,
+  "source_pop": 1159633.8560000006,
+  "bytes": 2743,
+  "no_data": false
+ },
+ "EE": {
+  "rows": 775,
+  "total_rows": 862,
+  "kept_pop": 1310207.1989999954,
+  "source_pop": 1310749.5970000015,
+  "bytes": 10869,
+  "no_data": false
+ },
+ "CY": {
+  "rows": 124,
+  "total_rows": 128,
+  "kept_pop": 1160705.2760000005,
+  "source_pop": 1160728.4880000001,
+  "bytes": 1862,
+  "no_data": false
+ },
+ "MU": {
+  "rows": 32,
+  "total_rows": 36,
+  "kept_pop": 1268247.1569999994,
+  "source_pop": 1268289.675,
+  "bytes": 534,
+  "no_data": false
+ },
+ "SZ": {
+  "rows": 188,
+  "total_rows": 188,
+  "kept_pop": 1287360.0460000003,
+  "source_pop": 1287360.046,
+  "bytes": 3013,
+  "no_data": false
+ },
+ "DJ": {
+  "rows": 223,
+  "total_rows": 227,
+  "kept_pop": 884003.181999999,
+  "source_pop": 884030.8620000001,
+  "bytes": 3296,
+  "no_data": false
+ },
+ "FJ": {
+  "rows": 341,
+  "total_rows": 397,
+  "kept_pop": 882877.4470000002,
+  "source_pop": 883245.4130000003,
+  "bytes": 5594,
+  "no_data": false
+ },
+ "KM": {
+  "rows": 35,
+  "total_rows": 36,
+  "kept_pop": 755395.3900000001,
+  "source_pop": 755395.39,
+  "bytes": 579,
+  "no_data": false
+ },
+ "GY": {
+  "rows": 869,
+  "total_rows": 1878,
+  "kept_pop": 751910.3420000006,
+  "source_pop": 759942.7470000002,
+  "bytes": 11726,
+  "no_data": false
+ },
+ "SB": {
+  "rows": 457,
+  "total_rows": 554,
+  "kept_pop": 551751.2980000002,
+  "source_pop": 552201.6339999997,
+  "bytes": 7013,
+  "no_data": false
+ },
+ "BT": {
+  "rows": 394,
+  "total_rows": 410,
+  "kept_pop": 817989.6690000008,
+  "source_pop": 818143.6990000006,
+  "bytes": 5671,
+  "no_data": false
+ },
+ "MO": {
+  "rows": 2,
+  "total_rows": 2,
+  "kept_pop": 545350.422,
+  "source_pop": 545350.422,
+  "bytes": 37,
+  "no_data": false
+ },
+ "LU": {
+  "rows": 49,
+  "total_rows": 50,
+  "kept_pop": 562765.4720000001,
+  "source_pop": 562782.7210000001,
+  "bytes": 695,
+  "no_data": false
+ },
+ "SR": {
+  "rows": 721,
+  "total_rows": 1282,
+  "kept_pop": 537330.9419999991,
+  "source_pop": 541450.918999999,
+  "bytes": 9700,
+  "no_data": false
+ },
+ "ME": {
+  "rows": 0,
+  "kept_pop": 0,
+  "source_pop": 0,
+  "no_data": true
+ },
+ "EH": {
+  "rows": 0,
+  "kept_pop": 0,
+  "source_pop": 0,
+  "no_data": true
+ },
+ "MT": {
+  "rows": 9,
+  "total_rows": 9,
+  "kept_pop": 418553.85000000003,
+  "source_pop": 418553.85,
+  "bytes": 146,
+  "no_data": false
+ },
+ "MV": {
+  "rows": 178,
+  "total_rows": 272,
+  "kept_pop": 362107.05699999986,
+  "source_pop": 362137.12299999996,
+  "bytes": 2354,
+  "no_data": false
+ },
+ "CV": {
+  "rows": 87,
+  "total_rows": 95,
+  "kept_pop": 507591.9180000002,
+  "source_pop": 507627.5420000001,
+  "bytes": 1362,
+  "no_data": false
+ },
+ "BN": {
+  "rows": 62,
+  "total_rows": 75,
+  "kept_pop": 402433.79,
+  "source_pop": 402513.38,
+  "bytes": 899,
+  "no_data": false
+ },
+ "BZ": {
+  "rows": 250,
+  "total_rows": 271,
+  "kept_pop": 354527.278,
+  "source_pop": 354588.62799999985,
+  "bytes": 3871,
+  "no_data": false
+ },
+ "BS": {
+  "rows": 306,
+  "total_rows": 432,
+  "kept_pop": 374360.1589999998,
+  "source_pop": 375224.1490000001,
+  "bytes": 4517,
+  "no_data": false
+ },
+ "IS": {
+  "rows": 976,
+  "total_rows": 2193,
+  "kept_pop": 317335.285,
+  "source_pop": 327102.1909999992,
+  "bytes": 13881,
+  "no_data": false
+ },
+ "VU": {
+  "rows": 218,
+  "total_rows": 262,
+  "kept_pop": 246557.2670000002,
+  "source_pop": 246803.1660000001,
+  "bytes": 3515,
+  "no_data": false
+ },
+ "BB": {
+  "rows": 10,
+  "total_rows": 10,
+  "kept_pop": 283804.54,
+  "source_pop": 283804.54,
+  "bytes": 168,
+  "no_data": false
+ },
+ "ST": {
+  "rows": 19,
+  "total_rows": 21,
+  "kept_pop": 189455.25499999998,
+  "source_pop": 189455.255,
+  "bytes": 230,
+  "no_data": false
+ },
+ "WS": {
+  "rows": 45,
+  "total_rows": 50,
+  "kept_pop": 189293.85000000003,
+  "source_pop": 189324.34600000008,
+  "bytes": 794,
+  "no_data": false
+ },
+ "LC": {
+  "rows": 13,
+  "total_rows": 13,
+  "kept_pop": 183668.272,
+  "source_pop": 183668.272,
+  "bytes": 213,
+  "no_data": false
+ },
+ "KI": {
+  "rows": 63,
+  "total_rows": 149,
+  "kept_pop": 90020.37599999999,
+  "source_pop": 90105.07300000003,
+  "bytes": 910,
+  "no_data": false
+ },
+ "SC": {
+  "rows": 11,
+  "total_rows": 11,
+  "kept_pop": 84941.88100000001,
+  "source_pop": 84941.88100000001,
+  "bytes": 165,
+  "no_data": false
+ },
+ "GD": {
+  "rows": 8,
+  "total_rows": 10,
+  "kept_pop": 100521.077,
+  "source_pop": 100528.279,
+  "bytes": 130,
+  "no_data": false
+ },
+ "FM": {
+  "rows": 43,
+  "total_rows": 52,
+  "kept_pop": 83246.16600000001,
+  "source_pop": 83314.76900000001,
+  "bytes": 612,
+  "no_data": false
+ },
+ "TO": {
+  "rows": 52,
+  "total_rows": 68,
+  "kept_pop": 99964.14400000001,
+  "source_pop": 100040.90800000002,
+  "bytes": 883,
+  "no_data": false
+ },
+ "VC": {
+  "rows": 16,
+  "total_rows": 17,
+  "kept_pop": 113640.14800000002,
+  "source_pop": 113640.148,
+  "bytes": 257,
+  "no_data": false
+ },
+ "AG": {
+  "rows": 14,
+  "total_rows": 15,
+  "kept_pop": 91586.72200000001,
+  "source_pop": 91587.51100000001,
+  "bytes": 216,
+  "no_data": false
+ },
+ "AD": {
+  "rows": 12,
+  "total_rows": 12,
+  "kept_pop": 69607.21700000002,
+  "source_pop": 69607.217,
+  "bytes": 169,
+  "no_data": false
+ },
+ "DM": {
+  "rows": 12,
+  "total_rows": 12,
+  "kept_pop": 71718.682,
+  "source_pop": 71718.682,
+  "bytes": 193,
+  "no_data": false
+ },
+ "LI": {
+  "rows": 8,
+  "total_rows": 8,
+  "kept_pop": 37067.348000000005,
+  "source_pop": 37067.348000000005,
+  "bytes": 113,
+  "no_data": false
+ },
+ "MC": {
+  "rows": 1,
+  "total_rows": 1,
+  "kept_pop": 30835.775,
+  "source_pop": 30835.775,
+  "bytes": 16,
+  "no_data": false
+ },
+ "MH": {
+  "rows": 111,
+  "total_rows": 225,
+  "kept_pop": 25208.067000000017,
+  "source_pop": 25570.763,
+  "bytes": 1503,
+  "no_data": false
+ },
+ "SM": {
+  "rows": 3,
+  "total_rows": 3,
+  "kept_pop": 30082.541999999998,
+  "source_pop": 30082.541999999998,
+  "bytes": 46,
+  "no_data": false
+ },
+ "PW": {
+  "rows": 20,
+  "total_rows": 24,
+  "kept_pop": 16461.916999999998,
+  "source_pop": 16481.104999999996,
+  "bytes": 286,
+  "no_data": false
+ },
+ "NR": {
+  "rows": 1,
+  "total_rows": 2,
+  "kept_pop": 9259.334,
+  "source_pop": 9259.334,
+  "bytes": 16,
+  "no_data": false
+ },
+ "TV": {
+  "rows": 6,
+  "total_rows": 18,
+  "kept_pop": 6422.327999999999,
+  "source_pop": 6422.3279999999995,
+  "bytes": 92,
+  "no_data": false
+ },
+ "VA": {
+  "rows": 1,
+  "total_rows": 1,
+  "kept_pop": 1083.786,
+  "source_pop": 1083.786,
+  "bytes": 16,
+  "no_data": false
+ }
+}

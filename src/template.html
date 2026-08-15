@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🌏 ランダム転生ガチャ — 生まれ変わったらどの国？</title>
+<style>
+{{STYLES}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🌏 ランダム転生ガチャ</h1>
+    <p class="sub">いま生まれ変わったら、どの国の人になる？<br>
+      国連「世界人口推計2024」の国別人口をそのまま確率にした、ガチの重み付き抽選です。</p>
+  </header>
+
+  <div class="card">
+    <div class="mapbox">
+      <svg class="map" id="map" xmlns="http://www.w3.org/2000/svg"></svg>
+      <button class="mapreset ghost" id="mapreset">世界全体に戻す</button>
+      <div class="maptip" id="maptip">🎲 ボタンを押すと当選国にズームします</div>
+    </div>
+
+    <div class="result" id="stage">
+      <div class="flag" id="flag">🎲</div>
+      <div class="lead">今回の人生</div>
+      <div class="cname" id="cname">???</div>
+      <div class="cen" id="cen">まだ生まれていません</div>
+      <div id="rarityWrap"></div>
+
+      <div class="stage2" id="stage2" style="display:none">
+        <div class="s2-loading" id="s2Loading">📍 具体的な生まれた場所を特定中…</div>
+        <div class="s2-result" id="s2Result" style="display:none">
+          <div class="s2-place" id="s2Place">–</div>
+          <div class="s2-coord" id="s2Coord"></div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b id="sProb">–</b><span>この国に生まれる確率</span></div>
+        <div class="stat"><b id="sOdds">–</b><span>おおよその割合</span></div>
+        <div class="stat"><b id="sPop">–</b><span id="sPopLab">人口</span></div>
+        <div class="stat"><b id="sCount">0</b><span>転生回数</span></div>
+      </div>
+
+      <div class="btns">
+        <button id="roll">🎲 ランダムに生まれ変わる</button>
+        <button id="roll10" class="ghost">10連</button>
+        <button id="reset" class="ghost">履歴リセット</button>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2>最近の転生 <span id="histCount" style="color:var(--muted);font-weight:400"></span></h2>
+    <div class="panel"><div class="hist" id="hist"><span class="chip">まだ転生していません</span></div></div>
+  </section>
+
+  <section>
+    <h2>地域別の確率</h2>
+    <div class="panel"><div class="regions" id="regions"></div></div>
+  </section>
+
+  <section>
+    <h2>全 <span id="nCountries"></span> か国・地域の確率テーブル</h2>
+    <div class="panel">
+      <input type="search" id="q" placeholder="国名で検索（例: 日本 / Japan / アフリカ）　※行をクリックで地図表示">
+      <div class="tbl">
+        <table>
+          <thead><tr><th>#</th><th>国・地域</th><th>人口</th><th>確率</th><th>割合</th></tr></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    人口データ（国別）: 国連 World Population Prospects 2024（中位推計・2024年時点）<br>
+    地図: Natural Earth ベースの world.geo.json（パブリックドメイン）<br>
+    人口分布データ（国内の地点）: <a href="https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count-rev11" target="_blank" rel="noopener">CIESIN, Gridded Population of the World v4 (GPWv4)</a>, 2015, CC BY 4.0<br>
+    地名データ: <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames.org</a>, CC BY 4.0<br>
+    対象 <b id="nFoot"></b> か国・地域／合計 <b id="total"></b> 人・世界人口の約 <b id="cover"></b> をカバー
+  </footer>
+</div>
+
+<script>
+{{DATA_JS}}
+</script>
+<script>
+{{GEO_INDEX_JS}}
+</script>
+<script>
+{{WORLD_JS}}
+</script>
+<script>
+{{MAP_JS}}
+</script>
+<script>
+{{ALIASES_JS}}
+</script>
+<script>
+{{APP_JS}}
+</script>
+</body>
+</html>
