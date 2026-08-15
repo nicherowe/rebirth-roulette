@@ -53,6 +53,83 @@ const MAP = (() => {
     gCountries = svg.querySelector('.countries');
     marker = svg.querySelector('.marker');
     marker2 = svg.querySelector('.marker2');
+    initInteraction();
+  }
+
+  // ---- ユーザー操作によるパン・ズーム（ホイール／ドラッグ／ピンチ） ----
+  const MIN_W = 12;                          // これ以上はズームインしない（地図座標px）
+  const pointers = new Map();                // pointerId -> {x,y}（ピンチ判定用）
+  let dragLast = null;                       // 直近のドラッグ位置（地図座標）
+
+  function getView() {
+    return svg.getAttribute('viewBox').split(' ').map(Number);
+  }
+  function setView(v) {
+    svg.setAttribute('viewBox', v.join(' '));
+    placeMarker(v[2]);
+  }
+  function clampView([x, y, w, h]) {
+    w = Math.min(VIEW.w, Math.max(MIN_W, w));
+    h = w * (VIEW.h / VIEW.w);
+    x = Math.min(W - w / 2, Math.max(-w / 2, x));
+    y = Math.min(VIEW.y + VIEW.h - h, Math.max(VIEW.y, y));
+    return [x, y, w, h];
+  }
+  function toMapPoint(clientX, clientY) {
+    const r = svg.getBoundingClientRect();
+    const [x, y, w, h] = getView();
+    return [x + (clientX - r.left) / r.width * w, y + (clientY - r.top) / r.height * h];
+  }
+  function zoomAt(clientX, clientY, factor) {
+    clearTimeout(anim);
+    const [mx, my] = toMapPoint(clientX, clientY);
+    const [x, y, w, h] = getView();
+    const nw = w * factor;
+    setView(clampView([mx - (mx - x) * (nw / w), my - (my - y) * (nw / w), nw, nw]));
+  }
+
+  function initInteraction() {
+    svg.addEventListener('wheel', e => {
+      e.preventDefault();
+      zoomAt(e.clientX, e.clientY, e.deltaY > 0 ? 1.15 : 1 / 1.15);
+    }, { passive: false });
+
+    svg.addEventListener('pointerdown', e => {
+      svg.setPointerCapture(e.pointerId);
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pointers.size === 1) { dragLast = toMapPoint(e.clientX, e.clientY); clearTimeout(anim); }
+      svg.classList.add('dragging');
+    });
+
+    svg.addEventListener('pointermove', e => {
+      if (!pointers.has(e.pointerId)) return;
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      clearTimeout(anim);
+      if (pointers.size === 1) {
+        const [mx, my] = toMapPoint(e.clientX, e.clientY);
+        const [x, y, w, h] = getView();
+        setView(clampView([x - (mx - dragLast[0]), y - (my - dragLast[1]), w, h]));
+        dragLast = toMapPoint(e.clientX, e.clientY);
+      } else if (pointers.size === 2) {
+        const [p1, p2] = [...pointers.values()];
+        const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y) || 1;
+        const midX = (p1.x + p2.x) / 2, midY = (p1.y + p2.y) / 2;
+        if (svg._pinchDist) zoomAt(midX, midY, svg._pinchDist / dist);
+        svg._pinchDist = dist;
+      }
+    });
+
+    const endPointer = e => {
+      pointers.delete(e.pointerId);
+      if (pointers.size < 2) svg._pinchDist = null;
+      if (pointers.size === 1) {
+        const [p] = [...pointers.values()];
+        dragLast = toMapPoint(p.x, p.y);
+      }
+      if (pointers.size === 0) svg.classList.remove('dragging');
+    };
+    svg.addEventListener('pointerup', endPointer);
+    svg.addEventListener('pointercancel', endPointer);
   }
 
   function tweenView(to, ms = 900) {

@@ -19,7 +19,8 @@
 
   /* ---- 地図 ---- */
   .mapbox{position:relative; overflow:hidden; border-radius:18px 18px 0 0; background:var(--sea)}
-  svg.map{display:block; width:100%; height:auto; aspect-ratio:1000/394}
+  svg.map{display:block; width:100%; height:auto; aspect-ratio:1000/394; cursor:grab; touch-action:none; user-select:none}
+  svg.map.dragging{cursor:grabbing}
   .map .ocean{fill:var(--sea)}
   .map .countries path{fill:var(--land); stroke:#0d1730; stroke-width:.5; vector-effect:non-scaling-stroke;
     transition:fill .15s}
