@@ -45,10 +45,11 @@
   .map .marker2 .pulse2{fill:none; stroke:var(--green); stroke-width:2; vector-effect:non-scaling-stroke;
     animation:pulse2 1.4s ease-out infinite; transform-origin:center}
   @keyframes pulse2{0%{r:3;opacity:.9}100%{r:13;opacity:0}}
-  .map .labels text{font-size:15px; fill:#e9edff; text-anchor:middle; font-weight:600;
+  .map .labels text, .map .capital text{font-size:15px; fill:#e9edff; text-anchor:middle; font-weight:600;
     paint-order:stroke; stroke:rgba(8,13,28,.88); stroke-width:4px; stroke-linejoin:round;
     pointer-events:none}
   .map .labels text.lbl-main{font-size:18px; fill:var(--green)}
+  .map .capital text.lbl-cap{font-size:17px; fill:var(--gold); font-weight:800}
   .maptip{position:absolute; left:10px; bottom:8px; font-size:11px; color:var(--muted)}
 
   /* ---- 結果 ---- */

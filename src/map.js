@@ -25,7 +25,7 @@ const MAP = (() => {
     return polys.map(p => p.map(ringPath).join('')).join('');
   }
 
-  let svg, gCountries, marker, marker2, gLabels, anim = null;
+  let svg, gCountries, marker, marker2, gLabels, gCapital, anim = null;
   let mk = { x: 0, y: 0 };                 // 国代表点マーカーの位置（地図座標）
   let mk2 = { x: 0, y: 0 };                // Stage2: 実際に抽選された地点のマーカー位置
 
@@ -36,20 +36,28 @@ const MAP = (() => {
     const k = viewW / VIEW.w;
     marker.setAttribute('transform', `translate(${mk.x},${mk.y}) scale(${k})`);
     if (marker2) marker2.setAttribute('transform', `translate(${mk2.x},${mk2.y}) scale(${k})`);
-    if (gLabels) gLabels.querySelectorAll('text').forEach(t => {
+    [gLabels, gCapital].forEach(g => g && g.querySelectorAll('text').forEach(t => {
       t.setAttribute('transform', `translate(${t.dataset.x},${t.dataset.y}) scale(${k})`);
-    });
+    }));
   }
 
-  // Stage2で抽選された地点の近くにある地名をラベルとして描画する
-  function renderLabels(items) {   // items: [{lon,lat,name,main}]
+  // Stage2で抽選された地点の近くにある主要な地名をラベルとして描画する
+  function renderLabels(items) {   // items: [{lon,lat,label,main}]
     gLabels.innerHTML = items.map(it => {
       const x = px(it.lon), y = py(it.lat);
-      return `<text class="${it.main ? 'lbl-main' : 'lbl'}" data-x="${x}" data-y="${y}" dy="-9">${escapeXml(it.name)}</text>`;
+      return `<text class="${it.main ? 'lbl-main' : 'lbl'}" data-x="${x}" data-y="${y}" dy="-9">${escapeXml(it.label)}</text>`;
     }).join('');
     placeMarker(Number(svg.getAttribute('viewBox').split(' ')[2]));
   }
   function clearLabels() { if (gLabels) gLabels.innerHTML = ''; }
+
+  // 首都は国が確定した時点から常に地図上の目印として表示する（ズーム/パンしても追従）
+  function showCapital(lon, lat, label) {
+    const x = px(lon), y = py(lat);
+    gCapital.innerHTML = `<text class="lbl-cap" data-x="${x}" data-y="${y}" dy="-9">★ ${escapeXml(label)}</text>`;
+    placeMarker(Number(svg.getAttribute('viewBox').split(' ')[2]));
+  }
+  function hideCapital() { if (gCapital) gCapital.innerHTML = ''; }
 
   function init(el) {
     svg = el;
@@ -65,10 +73,12 @@ const MAP = (() => {
       <g class="marker2" style="opacity:0">
         <circle class="pulse2" r="4"/><circle class="dot2" r="2"/>
       </g>
+      <g class="capital"></g>
       <g class="labels"></g>`;
     gCountries = svg.querySelector('.countries');
     marker = svg.querySelector('.marker');
     marker2 = svg.querySelector('.marker2');
+    gCapital = svg.querySelector('.capital');
     gLabels = svg.querySelector('.labels');
     initInteraction();
   }
@@ -181,6 +191,7 @@ const MAP = (() => {
     marker.style.opacity = 1;
     marker2.style.opacity = 0;               // Stage2の地点はまだ未確定
     clearLabels();
+    hideCapital();                           // 首都は places 取得後に showCapital() で表示される
 
     // 本土の大きさに応じたズーム倍率（小国ほど寄る）。代表点を中心に据える
     // 地図に描かれない微小国は、周りの島や大陸が見える程度に引いて表示する
@@ -198,11 +209,16 @@ const MAP = (() => {
   function reset() {
     marker2.style.opacity = 0;
     clearLabels();
+    hideCapital();
     tweenView([VIEW.x, VIEW.y, VIEW.w, VIEW.h], 700);
   }
 
-  // Stage2: 抽選された地点(経度,緯度)へさらにズームインし、近くの地名をラベル表示する
-  // places: [[lon,lat,name], ...]（当選国のGeoNamesデータ）、mainName: 結果カードに表示中の地名
+  // 都道府県/州名が地名と異なるときだけ「地名, 広域名」の形で表示する
+  const formatPlace = (name, admin1) => (admin1 && admin1 !== name) ? `${name}, ${admin1}` : name;
+
+  // Stage2: 抽選された地点(経度,緯度)へさらにズームインし、近くの主要な地名をラベル表示する
+  // places: [[lon,lat,name,admin1,population,isCapital], ...]（当選国のGeoNamesデータ）
+  // mainName: 結果カードに表示中の地名（このplacesエントリのnameと一致するものを強調表示する）
   function focusPoint(lon, lat, places = [], mainName = null, zoomDeg = 4) {
     mk2 = { x: px(lon), y: py(lat) };
     marker2.style.opacity = 1;
@@ -226,23 +242,29 @@ const MAP = (() => {
     const tx = Math.min(Math.max(mk2.x - w / 2, -w / 2), W - w / 2);
     const ty = Math.min(Math.max(mk2.y - h / 2, VIEW.y), VIEW.y + VIEW.h - h);
 
-    // ズーム後に画面に収まる範囲の地名を、地点に近い順の候補にする
+    // ズーム後に画面に収まる範囲の地名を候補にする（首都は showCapital() 側で
+    // 別途常時表示しているので、ここでは重複を避けるため除外する）。
     // （places の lon/lat は度単位、tx/ty/w/h は地図座標(px)単位なので変換して比較する）
     const candidates = places
-      .map(p => ({ lon: p[0], lat: p[1], name: p[2], mx: px(p[0]), my: py(p[1]) }))
-      .filter(it => it.mx >= tx - w * 0.06 && it.mx <= tx + w * 1.06 && it.my >= ty - h * 0.06 && it.my <= ty + h * 1.06)
-      .map(it => ({ ...it, d: (it.mx - mk2.x) ** 2 + (it.my - mk2.y) ** 2 }))
-      .sort((a, b) => a.d - b.d);
+      .map(p => ({ lon: p[0], lat: p[1], name: p[2], admin1: p[3], pop: p[4], cap: p[5],
+        mx: px(p[0]), my: py(p[1]) }))
+      .filter(it => !it.cap && it.mx >= tx - w * 0.06 && it.mx <= tx + w * 1.06 &&
+        it.my >= ty - h * 0.06 && it.my <= ty + h * 1.06);
+
+    const mainItem = candidates.find(it => it.name === mainName);
+    // 残りの枠は「抽選地点に一番近い都市」ではなく人口の多い主要都市を優先する
+    // （辺鄙な集落名より、見て分かりやすい大きな街を優先して表示するため）
+    const rest = candidates.filter(it => it !== mainItem).sort((a, b) => b.pop - a.pop);
 
     // ラベル同士が重ならないよう、既に選んだラベルから一定距離(ズーム幅の16%)
-    // 離れているものだけを近い順に最大5件採用する（近すぎる密集地名は間引く）
+    // 離れているものだけを最大5件採用する（近すぎる密集地名は間引く）
     const minSep = w * 0.16;
-    const items = [];
-    for (const c of candidates) {
+    const items = mainItem ? [mainItem] : [];
+    for (const c of rest) {
       if (items.length >= 5) break;
       if (items.every(it => Math.hypot(it.mx - c.mx, it.my - c.my) >= minSep)) items.push(c);
     }
-    items.forEach(it => it.main = it.name === mainName);
+    items.forEach(it => { it.main = it === mainItem; it.label = formatPlace(it.name, it.admin1); });
     renderLabels(items);
 
     tweenView([tx, ty, w, h], 700);
@@ -265,6 +287,6 @@ const MAP = (() => {
     marker.style.opacity = 1;
   }
 
-  return { init, focus, reset, blink, focusPoint, resetPoint };
+  return { init, focus, reset, blink, focusPoint, resetPoint, showCapital, hideCapital };
 })();
 

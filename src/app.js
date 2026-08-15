@@ -115,6 +115,7 @@ function fallbackPoint(country) {
 }
 
 // 総当たりで最近傍の地名を探す（最大でも数千件規模なので十分高速）
+// places の各要素: [lon, lat, name, admin1, population, isCapital]
 function nearestPlace(pt, places) {
   if (!places || !places.length) return null;
   const [plon, plat] = pt;
@@ -127,6 +128,9 @@ function nearestPlace(pt, places) {
   }
   return best;
 }
+
+// 都道府県/州名が地名と異なるときだけ「地名, 広域名」の形で表示する（map.jsと同じ規則）
+const formatPlace = (name, admin1) => (admin1 && admin1 !== name) ? `${name}, ${admin1}` : name;
 
 async function revealPoint(country) {
   const box = $('stage2'), loading = $('s2Loading'), result = $('s2Result');
@@ -142,9 +146,14 @@ async function revealPoint(country) {
     loading.style.display = 'none';
     result.style.display = '';
     const tag = approx ? '（推定）' : '';
-    $('s2Place').textContent = place ? `📍 ${place[2]} 近郊${tag}` : `📍 詳細地点${tag}`;
+    $('s2Place').textContent = place ? `📍 ${formatPlace(place[2], place[3])} 近郊${tag}` : `📍 詳細地点${tag}`;
     const ns = pt[1] >= 0 ? 'N' : 'S', ew = pt[0] >= 0 ? 'E' : 'W';
     $('s2Coord').textContent = `${Math.abs(pt[1]).toFixed(2)}°${ns}, ${Math.abs(pt[0]).toFixed(2)}°${ew}`;
+
+    const capital = places.find(p => p[5] === 1);
+    if (capital) MAP.showCapital(capital[0], capital[1], formatPlace(capital[2], capital[3]));
+    else MAP.hideCapital();
+
     MAP.focusPoint(pt[0], pt[1], places, place ? place[2] : null);
   } catch (err) {
     console.warn('Stage2 unavailable:', err);
