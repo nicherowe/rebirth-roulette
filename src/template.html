@@ -17,9 +17,12 @@
   </header>
 
   <div class="card">
-    <div class="mapbox">
+    <div class="mapbox" id="mapbox">
       <svg class="map" id="map" xmlns="http://www.w3.org/2000/svg"></svg>
-      <button class="mapreset ghost" id="mapreset">世界全体に戻す</button>
+      <div class="mapctrls">
+        <button class="mapreset ghost" id="mapreset">世界全体に戻す</button>
+        <button class="mapfull ghost" id="mapfull" aria-label="地図を全画面表示">⛶</button>
+      </div>
       <div class="maptip" id="maptip">🎲 ボタンを押すと当選国にズームします</div>
     </div>
 

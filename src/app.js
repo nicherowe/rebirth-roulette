@@ -145,7 +145,7 @@ async function revealPoint(country) {
     $('s2Place').textContent = place ? `📍 ${place[2]} 近郊${tag}` : `📍 詳細地点${tag}`;
     const ns = pt[1] >= 0 ? 'N' : 'S', ew = pt[0] >= 0 ? 'E' : 'W';
     $('s2Coord').textContent = `${Math.abs(pt[1]).toFixed(2)}°${ns}, ${Math.abs(pt[0]).toFixed(2)}°${ew}`;
-    MAP.focusPoint(pt[0], pt[1]);
+    MAP.focusPoint(pt[0], pt[1], places, place ? place[2] : null);
   } catch (err) {
     console.warn('Stage2 unavailable:', err);
     box.style.display = 'none';
@@ -201,6 +201,17 @@ $('reset').onclick = () => {
   $('sCount').textContent = '0';
 };
 $('mapreset').onclick = () => MAP.reset();
+
+function setMapFullscreen(on) {
+  $('mapbox').classList.toggle('fullscreen', on);
+  document.body.classList.toggle('map-fullscreen', on);
+  $('mapfull').textContent = on ? '✕' : '⛶';
+  $('mapfull').setAttribute('aria-label', on ? '全画面表示を閉じる' : '地図を全画面表示');
+}
+$('mapfull').onclick = () => setMapFullscreen(!$('mapbox').classList.contains('fullscreen'));
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && $('mapbox').classList.contains('fullscreen')) setMapFullscreen(false);
+});
 
 // ---- 地域別 ----
 const byRegion = {};
